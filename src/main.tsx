@@ -7,7 +7,7 @@ import './index.css';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <TonConnectUIProvider
-      manifestUrl="https://ton-connect.github.io/demo-dapp/tonconnect-manifest.json"
+      manifestUrl="https://telegram-mini-app-five-xi.vercel.app/tonconnect-manifest.json"
       actionsConfiguration={{
         twaReturnUrl: 'https://t.me/MyTONWalletAppBot'
       }}
