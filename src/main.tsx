@@ -6,7 +6,12 @@ import './index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <TonConnectUIProvider manifestUrl="https://ton-connect.github.io/demo-dapp/tonconnect-manifest.json">
+    <TonConnectUIProvider
+      manifestUrl="https://ton-connect.github.io/demo-dapp/tonconnect-manifest.json"
+      actionsConfiguration={{
+        twaReturnUrl: 'https://t.me/MyTONWalletAppBot'
+      }}
+    >
       <App />
     </TonConnectUIProvider>
   </StrictMode>,
